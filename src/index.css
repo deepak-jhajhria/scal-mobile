@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Rubik";
+  src: url(/src/Rubik-Regular.ttf);
+}
+.boxGradient {
+  background: linear-gradient(136deg, #0076be 3.65%, #48bf91 89.63%);
+}
+
+@layer components {
+  .screen {
+    @apply w-full mx-auto max-w-screen-xl px-3;
+  }
+  .mobileView {
+    @apply max-sm:flex max-sm:flex-col max-sm:items-center max-sm:top-0 max-sm:fixed max-sm:justify-center max-sm:w-full max-sm:h-full max-sm:-right-full duration-300 max-sm:bg-gradient-to-r max-sm:from-skyBlue max-sm:from-30% max-sm:to-Green max-sm:z-50;
+  }
+  .mobileView.show {
+    @apply max-sm:right-0;
+  }
+  .span1 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span2 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span3 {
+    @apply w-6 h-[2px] bg-white flex flex-col items-center;
+  }
+  .span4 {
+    @apply h-[2.4px] w-5 -rotate-[32deg] relative top-[4.5px] right-[1.5px] bg-white duration-300 rounded-2xl;
+  }
+  .span5 {
+    @apply h-[2.4px] w-[30px] relative bg-white duration-300 rounded-2xl;
+  }
+  .span6 {
+    @apply relative rotate-[35deg] w-5 -top-[3.5px] -left-[1.5px] duration-300 rounded-2xl;
+  }
+  .svgRight {
+    @apply relative after:absolute after:bg-roadmapSvg after:h-[58px] after:w-[58px] after:bg-no-repeat after:bg-cover after:bg-center after:-right-[5%] after:z-20 after:top-0;
+  }
+  .svgLeft {
+    @apply relative after:absolute after:bg-roadmapSvg after:h-[58px] after:w-[58px] after:bg-no-repeat after:bg-cover after:bg-center after:-left-[12.7%] after:z-20 after:top-0;
+  }
+  .swiper-button-prev {
+    @apply border border-white rounded-full absolute left-[25%] sm:left-0  max-sm:-bottom-[12%] sm:top-1/2 z-50;
+  }
+  .swiper-button-next {
+    @apply border border-white rounded-full absolute right-[25%] sm:right-0 max-sm:-bottom-[12%] sm:top-1/2 z-50;
+  }
+  .skyBlueEllipse{
+    @apply flex w-28 md:w-60 xxl:w-96 h-28 md:h-60 xxl:h-96 bg-gradient-to-r from-skyBlue from-15% to-[#95D8EB] blur-[245px]
+  }
+  .greenBlueEllipse{
+    @apply flex w-28 md:w-60 xxl:w-96 h-28 md:h-60 xxl:h-96 opacity-80 bg-gradient-to-r from-Green from-15% to-[#95D8EB] blur-[222px]
+  }
+  .topicLine{
+    @apply relative before:absolute before:w-[5px] before:h-full before:flex before:rounded-full before:left-0 before:bg-gradient-to-br before:from-skyBlue before:from-30%  before:to-Green
+  }
+  /* *{
+        outline: 1px solid red;
+    } */
+}
