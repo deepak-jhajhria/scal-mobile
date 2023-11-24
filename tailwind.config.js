@@ -11,15 +11,13 @@ export default {
         Rubik: "Rubik",
       },
       colors: {
-        Black: "#000000",
-        white: "#FFF",
-        skyBlue: "#0076BE",
-        Green: "#48BF91",
-        Sky: "#95D8EB",
-        blackSecondary:
-          "linear-gradient(136deg, rgba(0, 118, 190, 0.05) 3.65%, rgba(72, 191, 145, 0.05) 89.63%)",
-        skyBlueGradient:
-          "linear-gradient(136deg, #0076BE 3.65%, #48BF91 89.63%)",
+        'Black': "#000000",
+        'white': "#FFF",
+        'skyBlue': "#0076BE",
+        'Green': "#48BF91",
+        'Sky': "#95D8EB",
+        'blackSecondary':"linear-gradient(136deg, rgba(0, 118, 190, 0.05) 3.65%, rgba(72, 191, 145, 0.05) 89.63%)",
+        'skyBlueGradient':"linear-gradient(136deg, #0076BE 3.65%, #48BF91 89.63%)",
         skyBlueGradient2: "rgba(255, 255, 255, 0.10)",
       },
       backgroundImage: {
