@@ -14,8 +14,14 @@
 .roadmapLine::before{
   background-image: url(/public/images/roadmapLine.png)
 }
-.svgLeft::before,.svgRight ::before{
+.svgLeft::before,.svgRight::before{
 background-image: url(/public/images/roadmapSvg.svg)
+}
+.bgFooter{
+  background-image: url(/public/images/footerBG.webp)
+}
+.bgRoadmap{
+  background-image: url(/public/images/roadmapBG.webp)
 }
 @layer components {
   .screen {
