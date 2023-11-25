@@ -29,6 +29,13 @@ export default {
         roadmapLine: "url('./public/images/roadmapLine.png')",
         bgLine: "url('./public/images/bgLine.webp')",
       },
+      keyframes: {
+        loder: {
+          '0%': { left: '0',height: '29px' ,width:'15px' },
+          '50%': { height: '8px' ,width:'39px'},
+          '100%': { left: '229px',height: '29px' ,width:'15px'},
+        }
+      }
     },
     screens: {
       xs: "400px",

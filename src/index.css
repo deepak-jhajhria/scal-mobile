@@ -31,13 +31,13 @@
     @apply w-6 h-[2px] bg-white flex flex-col items-center;
   }
   .span4 {
-    @apply h-[2.4px] w-5 -rotate-[32deg] relative top-[4.5px] right-[1.5px] bg-white duration-300 rounded-2xl;
+    @apply h-[2.4px] w-5 -rotate-[32deg] relative top-[5.5px] right-[1.5px] bg-white duration-300 rounded-2xl;
   }
   .span5 {
     @apply h-[2.4px] w-[30px] relative bg-white duration-300 rounded-2xl;
   }
   .span6 {
-    @apply relative rotate-[35deg] w-5 -top-[3.5px] -left-[1.5px] duration-300 rounded-2xl;
+    @apply relative rotate-[35deg] w-5 -top-[4.5px] -left-[1.5px] duration-300 rounded-2xl;
   }
   .svgRight {
     @apply relative before:absolute before:bg-roadmapSvg before:h-[58px] before:w-[58px] before:bg-no-repeat before:bg-cover before:bg-center before:-right-[29px] before:z-20 before:top-0;
@@ -80,3 +80,4 @@
         outline: 1px solid red;
     } */
 }
+
