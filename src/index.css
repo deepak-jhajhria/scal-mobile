@@ -5,6 +5,9 @@
   font-family: "Rubik";
   src: url(/src/Rubik-Regular.ttf);
 }
+html{
+  scroll-behavior: smooth;
+}
 .boxGradient {
   background: linear-gradient(136deg, #0076be 3.65%, #48bf91 89.63%);
 }
@@ -87,7 +90,6 @@ background-image: url(/public/images/roadmapSvg.svg)
   .text_base{
     @apply text-sm sm:text-base;
   }
-
   /* *{
         outline: 1px solid red;
     } */

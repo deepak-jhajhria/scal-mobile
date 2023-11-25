@@ -26,6 +26,7 @@ setTimeout(() => {
 function backToTop() {
   window.scrollTo(0, 0);
 }
+document.getElementById('backtotop').addEventListener("click",backToTop)
 window.addEventListener("scroll", function () {
   const mybackto = document.getElementById("backtotop");
   if (window.scrollY > 500) {
