@@ -1,3 +1,4 @@
+import "preline"
 import "flowbite";
 import "./src/index.css";
 import { register } from "swiper/element/bundle"; register();
