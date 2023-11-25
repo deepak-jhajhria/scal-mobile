@@ -24,10 +24,10 @@ export default {
         skyBlueGradient2: "rgba(255, 255, 255, 0.10)",
       },
       backgroundImage: {
-        footerBG: "url('./images/footerBG.webp')",
-        roadmapBG: "url('./images/roadmapBG.webp')",
-        roadmapSvg: "url('../images/roadmapSvg.webp')",
-        roadmapLine: "url('../images/roadmapLine.webp')",
+        footerBG: "url('../images/footerBG.webp')",
+        roadmapBG: "url('../images/roadmapBG.webp')",
+        roadmapSvg: "url('../images/roadmapSvg.svg')",
+        roadmapLine: "url('../images/roadmapLine.png')",
         bgLine: "url('./public/images/bgLine.webp')",
       },
       keyframes: {

@@ -23,7 +23,22 @@
   <!-- back-to-top -->
   <div class="fixed bottom-0 right-0 z-50 transition duration-300  cursor-grab hover:-translate-y-2"><img id="backtotop" class="m-2 w-10 h-10 sm:w-16 sm:h-16 rotate-90" onclick="backToTop()" src="./public/images/icons8-go-back-100.png" alt="backtotop"></div>
   <!-- preloder -->
-  <div id="preloder" class="min-h-screen bg-white flex justify-center items-center fixed top-0 left-0 w-full z-[70]"><span class="animate-pulse text-2xl sm:text-3xl lg:text-5xl text-black font-semibold ff-rubi">Please Wait..</span></div>
+  <div id="preloder" aria-label="Loading..." role="status" class=" space-x-2 min-h-screen bg-white flex justify-center items-center fixed top-0 left-0 w-full z-[70]">
+    <svg class="h-20 w-20 animate-spin stroke-gray-500" viewBox="0 0 256 256">
+        <line x1="128" y1="32" x2="128" y2="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line x1="195.9" y1="60.1" x2="173.3" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line x1="224" y1="128" x2="192" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+        </line>
+        <line x1="195.9" y1="195.9" x2="173.3" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line x1="128" y1="224" x2="128" y2="192" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+        </line>
+        <line x1="60.1" y1="195.9" x2="82.7" y2="173.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line x1="32" y1="128" x2="64" y2="128" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+        <line x1="60.1" y1="60.1" x2="82.7" y2="82.7" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+        </line>
+    </svg>
+    <span class="text-4xl font-medium text-gray-500">Loading...</span>
+</div>
   <!-- header  -->
   <header class="bg-black relative overflow-hidden z-40">
     <!-- nav bar  -->
@@ -86,13 +101,13 @@
   </header>
   <!-- roadmap section -->
   <section class=" bg-gradient-to-br from-skyBlue from-10% to-Green bg-cover bg-center overflow-hidden">
-    <div class="bgRoadmap bg-no-repeat bg-cover bg-center">
+    <div class="bg-roadmapBG bg-no-repeat bg-cover bg-center">
       <div class="screen py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32">
         <h2 class="text-white font-Rubik font-medium text-2xl sm:text-[32px] md:text-4xl lg:text-[40px] text-center">Why Choose Us?</h2>
         <p class="font-normal font-Rubik text_base text-white opacity-70 mt-2 text-center">Here are a few good reasons that make SCal Mobile your no.1 choice:</p>
         <div class="mt-10 roadmapLine">
             <div class="w-full flex max-md:flex-col flex-row">
-              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center max-md:svgLeft md:svgRight roadmapSvg"><p class="font-black font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] md:text-center text-transparent opacity-30 text-stroke">01</p></div>
+              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center max-md:svgLeft md:svgRight"><p class="font-black font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] md:text-center text-transparent opacity-30 text-stroke">01</p></div>
               <div class="flex md:w-1/2">
                 <div class="flex flex-col gap-4  max-xs:px-5 max-md:px-8 max-md:mr-5 md:max-w-md pl-6 sm:pl-12 md:pl-20">
                   <p class="font-black font-Rubik text-[22px] sm:text-2xl md:text-[26px] lg:text-[28px] text-white">We Know What We Do </p>
@@ -101,16 +116,16 @@
               </div>
             </div>
             <div class="w-full flex max-md:flex-col-reverse flex-row mt-5 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-              <div class="md:w-1/2 md:svgRight flex md:justify-end roadmapSvg">
+              <div class="md:w-1/2 md:svgRight flex md:justify-end">
                 <div class="flex flex-col gap-4 max-md:pl-8 max-md:mr-5 md:pr-20 max-xs:px-5 max-md:px-8 md:max-w-[465px]">
                   <p class="font-black font-Rubik text-[22px] sm:text-2xl md:text-[26px] lg:text-[28px] text-white md:text-end">It’s All About What Adds Value For You</p>
                   <p class="font-normal font-Rubik text_base text-white opacity-70 md:text-end">We may not be the only tech solutions company in the industry, but we are the leading one. Since the beginning of our journey in the tech world, we have been striving to establish an uncompromising level of quality, bringing value with all our products and services. The biggest proof of our exceptional performance is our strong base of happy clients that keeps growing every day. Be it a retailer, a carrier, a distributor, a repair shop, or a consumer, we work hard to provide you with the most profitable tech alternatives regardless of your business size and requirements.</p>
                 </div>
               </div>
-              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center items-center max-md:svgLeft roadmapSvg"><p class="font-black text-center font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] text-transparent opacity-30 text-stroke">02</p></div>
+              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center items-center max-md:svgLeft"><p class="font-black text-center font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] text-transparent opacity-30 text-stroke">02</p></div>
             </div>
             <div class="w-full flex max-md:flex-col flex-row mt-5 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
-              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center max-md:svgLeft md:svgRight roadmapSvg"><p class="font-black font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] text-center text-transparent opacity-30 text-stroke">03</p></div>
+              <div class="md:w-1/2 flex max-md:pl-10 md:justify-center max-md:svgLeft md:svgRight"><p class="font-black font-Rubik text-[120px] sm:text-[150px] xl:text-[180px] text-center text-transparent opacity-30 text-stroke">03</p></div>
               <div class=" md:w-1/2 flex">
                 <div class="flex flex-col max-xs:px-5 max-md:px-8 max-md:mr-5 md:pl-20 gap-4 md:max-w-md">
                   <p class="font-black font-Rubik text-[22px] sm:text-2xl md:text-[26px] lg:text-[28px] text-white">However Far Away, We Will Always Serve You</p>

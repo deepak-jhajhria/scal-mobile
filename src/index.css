@@ -14,18 +14,6 @@ html{
 .text-stroke {
   -webkit-text-stroke: 1px white;
 }
-.roadmapLine::before{
-  background-image: url(/public/images/roadmapLine.png)
-}
-.roadmapSvg::before{
-background-image: url(/public/images/roadmapSvg.svg)
-}
-.bgFooter{
-  background-image: url(/public/images/footerBG.webp)
-}
-.bgRoadmap{
-  background-image: url(/public/images/roadmapBG.webp)
-}
 .text-stroke {
   -webkit-text-stroke: 1px #5EB1C5;
 }
@@ -58,13 +46,13 @@ background-image: url(/public/images/roadmapSvg.svg)
     @apply relative rotate-[35deg] w-5 -top-[4.5px] -left-[1.5px] duration-300 rounded-2xl;
   }
   .svgRight {
-    @apply relative before:absolute before:h-[58px] before:w-[58px] before:bg-no-repeat before:bg-cover before:bg-center before:-right-[29px] before:z-20 before:top-0;
+    @apply relative before:absolute before:h-[58px] before:bg-roadmapSvg before:w-[58px] before:bg-no-repeat before:bg-cover before:bg-center before:-right-[29px] before:z-20 before:top-0;
   }
   .svgLeft {
-    @apply relative before:absolute before:h-12 xs:before:h-[58px] before:w-12 xs:before:w-[58px] before:bg-no-repeat before:bg-cover before:bg-center before:-left-[22px] xs:before:-left-[27.7px] md:before:-left-[4.7%] before:z-20 before:top-0;
+    @apply relative before:absolute before:h-12 before:bg-roadmapSvg xs:before:h-[58px] before:w-12 xs:before:w-[58px] before:bg-no-repeat before:bg-cover before:bg-center before:-left-[22px] xs:before:-left-[27.7px] md:before:-left-[4.7%] before:z-20 before:top-0;
   }
   .roadmapLine {
-    @apply relative before:absolute before:w-[2px] md:before:left-1/2 max-md:left-[9%] before:bg-[url('./public/images/roadmapLine.png')] before:h-[95%]  before:top-6 before:bottom-0;
+    @apply relative before:absolute before:bg-roadmapLine before:w-[2px] md:before:left-1/2 max-md:left-[9%] before:h-[95%]  before:top-6 before:bottom-0;
   }
   .swiper-button-prev {
     @apply border border-white rounded-full absolute left-[25%] xs:left-0  max-xs:-bottom-[12%] xs:top-1/2 z-50;
