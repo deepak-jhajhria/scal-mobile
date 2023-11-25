@@ -23,8 +23,8 @@ export default {
         skyBlueGradient2: "rgba(255, 255, 255, 0.10)",
       },
       backgroundImage: {
-        footerBG: "url('./public/images/footerBG.webp')",
-        roadmapBG: "url('./public/images/roadmapBG.webp')",
+        footerBG: "url('./public/images/footerBG.png')",
+        roadmapBG: "url('./public/images/roadmapBG.png')",
         roadmapSvg: "url('./public/images/roadmapSvg.svg')",
         roadmapLine: "url('./public/images/roadmapLine.png')",
         bgLine: "url('./public/images/bgLine.webp')",
