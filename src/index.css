@@ -11,6 +11,12 @@
 .text-stroke {
   -webkit-text-stroke: 1px white;
 }
+.roadmapLine::before{
+  background-image: url(/public/images/roadmapLine.png)
+}
+.svgLeft::before,.svgRight ::before{
+background-image: url(/public/images/roadmapSvg.svg)
+}
 @layer components {
   .screen {
     @apply w-full mx-auto max-w-screen-xl px-3;
