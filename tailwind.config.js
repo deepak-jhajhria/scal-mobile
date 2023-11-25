@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
-    'node_modules/preline/dist/*.js'
+    "node_modules/preline/dist/*.js",
   ],
   theme: {
     extend: {
@@ -24,7 +24,7 @@ export default {
         skyBlueGradient2: "rgba(255, 255, 255, 0.10)",
       },
       backgroundImage: {
-        footerBG: "url('./public/images/footerBG.png')",
+        footerBG: "url('../images/footerBG.png')",
         roadmapBG: "url('./public/images/roadmapBG.png')",
         roadmapSvg: "url('./public/images/roadmapSvg.svg')",
         roadmapLine: "url('./public/images/roadmapLine.png')",
@@ -32,11 +32,11 @@ export default {
       },
       keyframes: {
         loder: {
-          '0%': { left: '0',height: '29px' ,width:'15px' },
-          '50%': { height: '8px' ,width:'39px'},
-          '100%': { left: '229px',height: '29px' ,width:'15px'},
-        }
-      }
+          "0%": { left: "0", height: "29px", width: "15px" },
+          "50%": { height: "8px", width: "39px" },
+          "100%": { left: "229px", height: "29px", width: "15px" },
+        },
+      },
     },
     screens: {
       xs: "400px",
@@ -51,6 +51,6 @@ export default {
     require("flowbite/plugin"),
     require("tailwindcss"),
     require("autoprefixer"),
-    require('preline/plugin'),
+    require("preline/plugin"),
   ],
 };

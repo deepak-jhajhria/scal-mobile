@@ -26,6 +26,9 @@ background-image: url(/public/images/roadmapSvg.svg)
 .bgRoadmap{
   background-image: url(/public/images/roadmapBG.webp)
 }
+.text-stroke {
+  -webkit-text-stroke: 1px #5EB1C5;
+}
 @layer components {
   .screen {
     @apply w-full mx-auto max-w-screen-xl px-3;
