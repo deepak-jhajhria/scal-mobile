@@ -14,7 +14,7 @@
 .roadmapLine::before{
   background-image: url(/public/images/roadmapLine.png)
 }
-.svgLeft::before,.svgRight::before{
+.svgLeft,.svgRight{
 background-image: url(/public/images/roadmapSvg.svg)
 }
 .bgFooter{
